@@ -30,7 +30,15 @@
         "workshop/example-extension": "@dev"
     },
     "require-dev": {
-        "typo3/cms-lowlevel": "*"
+        "typo3/cms-lowlevel": "*",
+        "codeception/codeception": "^2.5",
+        "typo3-console/php-server-command": "^0.2.0",
+        "typo3/testing-framework": "^4.11"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codappix\\Tests\\": "tests/Classes"
+        }
     },
     "extra": {
         "typo3/cms": {
