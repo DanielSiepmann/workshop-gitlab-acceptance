@@ -33,13 +33,13 @@ class Typo3Environment extends BackendEnvironment
     public function _initialize()
     {
         ArrayUtility::mergeRecursiveWithOverrule($this->config, [
-            // 'typo3DatabaseDriver' => 'pdo_sqlite',
-            'typo3DatabaseDriver' => 'pdo_mysql',
-            'typo3DatabaseHost' => 'localhost',
-            'typo3DatabaseUsername' => 'testing',
-            'typo3DatabasePassword' => 'testing',
-            'typo3DatabaseName' => 'workshopgitlabtesting',
-            'typo3DatabasePort' => '3306',
+            'typo3DatabaseDriver' => 'pdo_sqlite',
+            // 'typo3DatabaseDriver' => 'pdo_mysql',
+            // 'typo3DatabaseHost' => 'localhost',
+            // 'typo3DatabaseUsername' => 'testing',
+            // 'typo3DatabasePassword' => 'testing',
+            // 'typo3DatabaseName' => 'workshopgitlabtesting',
+            // 'typo3DatabasePort' => '3306',
             'coreExtensionsToLoad' => [
                 'core',
                 'extbase',
