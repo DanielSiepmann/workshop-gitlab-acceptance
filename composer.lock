@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45d00f41ddf023a65306694333cde06f",
+    "content-hash": "70032a54e00b2c590d49f81a476288e1",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -5921,46 +5921,6 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2017-04-07T12:08:54+00:00"
-        },
-        {
-            "name": "typo3-console/php-server-command",
-            "version": "v0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-Console/php-server-command.git",
-                "reference": "a944ecc1ba99434da5cece866b34390242142e28"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/php-server-command/zipball/a944ecc1ba99434da5cece866b34390242142e28",
-                "reference": "a944ecc1ba99434da5cece866b34390242142e28",
-                "shasum": ""
-            },
-            "require": {
-                "helhum/typo3-console": "^5.0",
-                "php": ">=7.0 <7.3",
-                "symfony/process": "^3.3.6 || ^4.0"
-            },
-            "require-dev": {
-                "helhum/typo3-composer-setup": "^0.5.1"
-            },
-            "type": "library",
-            "extra": {
-                "typo3/cms": {
-                    "web-dir": "public"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Typo3Console\\PhpServer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "PHP server command for TYPO3 Console",
-            "time": "2018-01-03T14:48:03+00:00"
         },
         {
             "name": "typo3/cms-lowlevel",
