@@ -23,13 +23,20 @@ setup:composer:
 test:acceptance:
     image: php:7.2-alpine
     stage: test
+    services:
+        - mysql:5.7
+    variables:
+        MYSQL_DATABASE: workshopgitlabtesting
+        MYSQL_ROOT_PASSWORD: testing
     dependencies:
         - setup:composer
     before_script:
-        - apk --no-cache add sqlite
-        - cp public/index.php app
+        - docker-php-ext-install pdo pdo_mysql
+        - cp public/index.php app/index.php
         - cp public/typo3/index.php app/typo3/index.php
         - cp public/typo3/install.php app/typo3/install.php
-        - TYPO3_PATH_ROOT=$(pwd)/app/typo3temp/var/tests/acceptance TYPO3_PATH_APP=$(pwd)/app/typo3temp/var/tests/acceptance  php -S 127.0.0.1:8080 -t app/typo3temp/var/tests/acceptance &
+        - sed -i.bak -e '133,136d' vendor/typo3/testing-framework/Classes/Core/Testbase.php
+        - mkdir -p app/typo3temp/var/tests/acceptance
+        - env TYPO3_PATH_ROOT="$CI_PROJECT_DIR/app/typo3temp/var/tests/acceptance" TYPO3_PATH_APP="$CI_PROJECT_DIR/app/typo3temp/var/tests/acceptance"  php -S 127.0.0.1:8080 -t app/typo3temp/var/tests/acceptance &
     script:
         - ./vendor/bin/codecept run
