@@ -1,9 +1,7 @@
 stages:
     - lint
     - setup
-    - cgl
-    - build
-    - deploy
+    - test
 
 lint:php7.2:
     image: php:7.2-alpine
@@ -40,8 +38,21 @@ setup:composer:
         paths:
             - .composer/cache
     artifacts:
-        expire_in: 1 hour
-        paths:
-            - vendor
-            - public
-            - private
+
+test:acceptance:
+    image: php:7.2-alpine
+    stage: test
+    dependencies:
+        - setup:composer
+    before_script:
+        - apk --no-cache add mysql
+        - cp public/index.php app
+        - cp public/typo3/index.php app/typo3/index.php
+        - cp public/typo3/install.php app/typo3/install.php
+        - mysql -u root -proot -e 'CREATE DATABASE workshopgitlabtesting CHARACTER SET utf8 COLLATE utf8_general_ci;'
+        - mysql -u root -proot -e "CREATE USER 'testing'@'localhost' IDENTIFIED BY 'testing';"
+        - mysql -u root -proot -e "GRANT ALL PRIVILEGES ON workshopgitlabtesting.* TO 'testing'@'localhost';"
+        - mysql -u root -proot -e 'GRANT ALL PRIVILEGES ON `workshopgitlabtesting\_%`.* TO testing@localhost;'
+        - TYPO3_PATH_ROOT=$(pwd)/app/typo3temp/var/tests/acceptance TYPO3_PATH_APP=$(pwd)/app/typo3temp/var/tests/acceptance  php -S 127.0.0.1:8080 -t app/typo3temp/var/tests/acceptance &
+    script:
+        - ./vendor/bin/codecept run
