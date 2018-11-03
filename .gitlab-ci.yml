@@ -1,0 +1,47 @@
+stages:
+    - lint
+    - setup
+    - cgl
+    - build
+    - deploy
+
+lint:php7.2:
+    image: php:7.2-alpine
+    stage: lint
+    before_script:
+        - apk --no-cache add parallel
+    script:
+        - find localPackages/ -name \*.php | parallel --gnu php -d display_errors=stderr -l {} > /dev/null \;
+
+lint:xml:
+    image: alpine:3.7
+    stage: lint
+    before_script:
+        - apk --no-cache add libxml2-utils
+        - wget https://raw.githubusercontent.com/symfony/translation/v4.1.1/Resources/schemas/xliff-core-1.2-strict.xsd
+    script:
+        - xmllint --schema xliff-core-1.2-strict.xsd --noout $(find localPackages -name '*.xlf')
+
+lint:composer:
+    image: composer:latest
+    stage: lint
+    script:
+        - composer validate --no-check-publish --no-check-all
+
+setup:composer:
+    image: composer:latest
+    stage: setup
+    script:
+        - mkdir -p .composer/cache
+        - composer config -g github-oauth.github.com $GITHUB_ACCESS_TOKEN
+        - COMPOSER_CACHE_DIR=.composer/cache composer install --no-progress --no-ansi --no-interaction -o
+    cache:
+        key: composer-cache
+        paths:
+            - .composer/cache
+    artifacts:
+        expire_in: 1 hour
+        paths:
+            - vendor
+            - public
+            - private
