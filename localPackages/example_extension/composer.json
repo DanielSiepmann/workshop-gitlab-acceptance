@@ -1,0 +1,21 @@
+{
+    "name": "workshop/example-extension",
+    "description": "Example for TYPO3 Extension Workshop.",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Daniel Siepmann",
+            "email": "coding@daniel-siepmann.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Workshop\\ExampleExtension\\": "Classes"
+        }
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "typo3/cms-core": "*"
+    }
+}

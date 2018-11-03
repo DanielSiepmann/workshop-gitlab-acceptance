@@ -1,0 +1,44 @@
+{
+    "repositories": [
+        {
+            "type": "path",
+            "url": "localPackages/*"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
+    ],
+    "name": "website/typo3-extension-workshop",
+    "description": "Example TYPO3 installation for workshop",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "helhum/typo3-console": "^5.5.5",
+        "helhum/typo3-secure-web": "^0.2.7",
+        "typo3-console/composer-auto-commands": "^0.2.0",
+        "typo3/cms-core": "^9.5.0",
+        "typo3/cms-about": "*",
+        "typo3/cms-belog": "*",
+        "typo3/cms-beuser": "*",
+        "typo3/cms-fluid-styled-content": "*",
+        "typo3/cms-info": "*",
+        "typo3/cms-info-pagetsconfig": "*",
+        "typo3/cms-rte-ckeditor": "*",
+        "typo3/cms-setup": "*",
+        "typo3/cms-t3editor": "*",
+        "typo3/cms-tstemplate": "*",
+        "workshop/example-extension": "@dev"
+    },
+    "require-dev": {
+        "typo3/cms-lowlevel": "*"
+    },
+    "extra": {
+        "typo3/cms": {
+            "app-dir": "app",
+            "root-dir": "app",
+            "web-dir": "public"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

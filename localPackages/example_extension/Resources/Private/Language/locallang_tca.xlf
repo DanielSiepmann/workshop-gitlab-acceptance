@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-05T08:51:01Z" product-name="CodeExamples">
+        <header/>
+        <body>
+            <trans-unit id="address" xml:space="preserve">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="company_name" xml:space="preserve">
+                <source>Company name</source>
+            </trans-unit>
+            <trans-unit id="street" xml:space="preserve">
+                <source>Street</source>
+            </trans-unit>
+            <trans-unit id="house_number" xml:space="preserve">
+                <source>House number</source>
+            </trans-unit>
+            <trans-unit id="zip" xml:space="preserve">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="city" xml:space="preserve">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="country" xml:space="preserve">
+                <source>Country</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,41 @@
+<h3>Editing: {address.companyName}</h3>
+
+<f:form action="update" object="{address}" name="address">
+    <f:for each="{
+        0: 'companyName',
+        1: 'street',
+        2: 'houseNumber',
+        3: 'zip',
+        4: 'city',
+        5: 'country'
+    }" as="propertyName">
+        {f:render(section: 'Field', arguments: {
+            propertyName: propertyName
+        })}
+    </f:for>
+
+    <br>
+    <f:form.submit value="Update" />
+</f:form>
+
+<f:section name="Field">
+    <p>
+        <label for="{propertyName}">{f:translate(id: 'labels.{propertyName}')}</label>
+        <br>
+        <f:form.textfield property="{propertyName}" id="{propertyName}" />
+        {f:render(section: 'FieldErrors', arguments: {
+            propertyPath: 'address.{propertyName}'
+        })}
+        <br>
+    </p>
+</f:section>
+
+<f:section name="FieldErrors">
+    <f:form.validationResults for="{propertyPath}">
+        <f:for each="{validationResults.flattenedErrors}" as="errors">
+            <f:for each="{errors}" as="error">
+                {f:translate(id: 'error.{propertyPath}.{error.code}', default: error.code)}
+            </f:for>
+        </f:for>
+    </f:form.validationResults>
+</f:section>

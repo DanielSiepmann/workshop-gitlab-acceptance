@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-10-01T11:16:33Z" product-name="CodeExamples">
+        <header/>
+        <body>
+            <!-- Form Labels -->
+            <trans-unit id="labels.companyName" xml:space="preserve">
+                <source>Company name</source>
+            </trans-unit>
+            <trans-unit id="labels.street" xml:space="preserve">
+                <source>Street</source>
+            </trans-unit>
+            <trans-unit id="labels.houseNumber" xml:space="preserve">
+                <source>House number</source>
+            </trans-unit>
+            <trans-unit id="labels.zip" xml:space="preserve">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="labels.city" xml:space="preserve">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="labels.country" xml:space="preserve">
+                <source>Country</source>
+            </trans-unit>
+
+            <!-- Form Validation -->
+            <trans-unit id="error.address.companyName.1221560718" xml:space="preserve">
+                <source>Please provide a company name.</source>
+            </trans-unit>
+            <trans-unit id="error.address.zip.1221565130" xml:space="preserve">
+                <source>Please provide a valid ZIP consisting of 5 digits.</source>
+            </trans-unit>
+
+            <trans-unit id="flashSuccess" xml:space="preserve">
+                <source>Update des Datensatzes %1$s war Erfolgreich.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

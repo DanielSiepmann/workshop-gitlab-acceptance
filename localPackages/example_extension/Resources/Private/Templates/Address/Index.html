@@ -1,0 +1,11 @@
+<f:flashMessages />
+<f:for each="{addresses}" as="address">
+    <h3>{address.companyName}</h3>
+    <address>
+        {address.street} {address.houseNumber}
+        {address.zip} {address.city}
+        {address.country}
+    </address>
+
+    <f:link.action action="edit" arguments="{address: address}">Edit</f:link.action>
+</f:for>
