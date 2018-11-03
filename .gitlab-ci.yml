@@ -38,6 +38,11 @@ setup:composer:
         paths:
             - .composer/cache
     artifacts:
+        expire_in: 1 hour
+        paths:
+            - app
+            - public
+            - vendor
 
 test:acceptance:
     image: php:7.2-alpine
