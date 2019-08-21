@@ -7,7 +7,6 @@ setup:composer:
     stage: setup
     script:
         - mkdir -p .composer/cache
-        - composer config -g github-oauth.github.com $GITHUB_ACCESS_TOKEN
         - COMPOSER_CACHE_DIR=.composer/cache composer install --no-progress --no-ansi --no-interaction -o
     cache:
         key: composer-cache
