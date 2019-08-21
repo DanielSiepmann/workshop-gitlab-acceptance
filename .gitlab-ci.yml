@@ -13,10 +13,10 @@ setup:composer:
         paths:
             - .composer/cache
     artifacts:
-        expire_in: 1 hour
+        expire_in: 30 mins
         paths:
             - app
-            - public
+            - web
             - vendor
 
 test:acceptance:
@@ -24,18 +24,22 @@ test:acceptance:
     stage: test
     services:
         - mysql:5.7
+        - selenium/standalone-chrome
     variables:
-        MYSQL_DATABASE: workshopgitlabtesting
-        MYSQL_ROOT_PASSWORD: testing
-    dependencies:
-        - setup:composer
+        MYSQL_ROOT_PASSWORD: "dev"
+        MYSQL_DATABASE: "dev"
+        MYSQL_USER: "dev"
+        MYSQL_PASSWORD: "dev"
     before_script:
-        - docker-php-ext-install pdo pdo_mysql
-        - cp public/index.php app/index.php
-        - cp public/typo3/index.php app/typo3/index.php
-        - cp public/typo3/install.php app/typo3/install.php
-        - sed -i.bak -e '133,136d' vendor/typo3/testing-framework/Classes/Core/Testbase.php
-        - mkdir -p app/typo3temp/var/tests/acceptance
-        - env TYPO3_PATH_ROOT="$CI_PROJECT_DIR/app/typo3temp/var/tests/acceptance" TYPO3_PATH_APP="$CI_PROJECT_DIR/app/typo3temp/var/tests/acceptance"  php -S 127.0.0.1:8080 -t app/typo3temp/var/tests/acceptance &
+        - docker-php-ext-install pdo pdo_mysql mysqli
+        - export LOCAL_IP=$(ip a | grep inet | sed -n 2p | xargs | cut -d" " -f2 | cut -d"/" -f1)
+        - export TESTING_DOMAIN="$LOCAL_IP:8080"
+        - export TYPO3_CONTEXT=Testing/Acceptance
+        - php -S "$TESTING_DOMAIN" -t web &
     script:
-        - ./vendor/bin/codecept run
+        - ./vendor/bin/codecept run --env=gitlab-ci
+    artifacts:
+        when: on_failure
+        expire_in: 10 mins
+        paths:
+            - tests/_output/

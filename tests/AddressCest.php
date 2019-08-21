@@ -28,7 +28,7 @@ class AddressCest
         $I->see('Edit');
         $I->click('Edit');
 
-        $I->see('Editing: TYPO3 Camp Rhein Ruhr');
+        $I->see('Editing: Codappix GmbH');
         $I->fillField(['id' => 'zip'], '123');
         $I->click('Update');
 

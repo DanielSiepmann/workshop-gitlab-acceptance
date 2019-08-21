@@ -5,4 +5,5 @@ CREATE TABLE tx_exampleextension_domain_model_address (
     zip varchar(255) DEFAULT '' NOT NULL,
     city varchar(255) DEFAULT '' NOT NULL,
     country varchar(255) DEFAULT '' NOT NULL,
+    slug varchar(2048),
 );

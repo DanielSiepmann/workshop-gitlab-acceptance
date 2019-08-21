@@ -10,6 +10,7 @@ return (function (
     return [
         'ctrl' => [
             'label' => 'company_name',
+            'iconfile' => 'EXT:core/Resources/Public/Icons/T3Icons/content/content-store.svg',
             'default_sortby' => 'company_name',
             'tstamp' => 'tstamp',
             'crdate' => 'crdate',
@@ -24,7 +25,7 @@ return (function (
             'searchFields' => 'company_name, street, city'
         ],
         'interface' => [
-            'showRecordFieldList' => 'company_name, street, house_number, zip, city, country'
+            'showRecordFieldList' => 'company_name, street, house_number, zip, city, country, slug'
         ],
         'palettes' => [
             'address' => [
@@ -42,6 +43,7 @@ return (function (
                 'showitem' => implode(',', [
                     '--div--;' . $coreLanguagePrefix . 'general',
                     'company_name;;address',
+                    'slug',
                 ]),
             ],
         ],
@@ -94,6 +96,18 @@ return (function (
                     'type' => 'input',
                     'max' => 255,
                     'eval' => 'trim,required',
+                ],
+            ],
+            'slug' => [
+                'label' => $extensionLanguagePrefix . 'slug',
+                'config' => [
+                    'type' => 'slug',
+                    'generatorOptions' => [
+                        'fields' => ['company_name'],
+                        'prefixParentPageSlug' => true,
+                    ],
+                    'fallbackCharacter' => '-',
+                    'eval' => 'uniqueInSite',
                 ],
             ],
         ],

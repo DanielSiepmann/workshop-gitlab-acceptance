@@ -1,0 +1,40 @@
+rootPageId: 1
+base: /
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-us
+    direction: ltr
+    flag: us
+errorHandling: {}
+routes: {}
+baseVariants: {}
+
+# routeEnhancers:
+#   ExamplePlugin:
+#     type: Extbase
+#     extension: ExampleExtension
+#     plugin: Address
+#     defaultController: 'Address::index'
+#     routes:
+#       -
+#         routePath: '/edit/{address}'
+#         _controller: 'Address::edit'
+#         _arguments:
+#           'address': 'address'
+#       -
+#         routePath: '/update'
+#         _controller: 'Address::update'
+#     aspects:
+#       address:
+#         type: PersistedAliasMapper
+#         tableName: 'tx_exampleextension_domain_model_address'
+#         routeFieldName: 'slug'
+#         routeValuePrefix: '/'

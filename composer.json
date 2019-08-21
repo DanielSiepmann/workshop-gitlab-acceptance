@@ -10,7 +10,7 @@
         }
     ],
     "name": "website/typo3-extension-workshop",
-    "description": "Example TYPO3 installation for workshop",
+    "description": "Example TYPO3 installation for Acceptance Testing",
     "license": "GPL-2.0-or-later",
     "require": {
         "helhum/typo3-console": "^5.5.5",
@@ -31,13 +31,8 @@
     },
     "require-dev": {
         "typo3/cms-lowlevel": "*",
-        "codeception/codeception": "^2.5",
+        "codeception/codeception": "^3.1.0",
         "typo3/testing-framework": "^4.11"
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Codappix\\Tests\\": "tests/Classes"
-        }
     },
     "config": {
         "platform": {
@@ -48,7 +43,7 @@
         "typo3/cms": {
             "app-dir": "app",
             "root-dir": "app",
-            "web-dir": "public"
+            "web-dir": "web"
         }
     },
     "minimum-stability": "dev",

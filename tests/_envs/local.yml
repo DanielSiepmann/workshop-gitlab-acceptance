@@ -1,0 +1,8 @@
+modules:
+    config:
+        WebDriver:
+            url: http://localhost:8080/
+        Db:
+            dsn: 'mysql:host=localhost;dbname=own_workshopgitlabacceptance_testing'
+            user: 'dev'
+            password: 'dev'

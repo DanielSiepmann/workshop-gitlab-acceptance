@@ -1,0 +1,9 @@
+modules:
+    config:
+        WebDriver:
+            url: http://%TESTING_DOMAIN%/
+            host: selenium__standalone-chrome
+        Db:
+            dsn: 'mysql:host=mysql;dbname=dev'
+            user: 'dev'
+            password: 'dev'
