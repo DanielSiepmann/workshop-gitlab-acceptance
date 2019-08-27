@@ -11,6 +11,10 @@ suites:
                       dump: tests/_data/typo3.sql
                       populate: true
                       cleanup: true
+                - MailHog:
+                      url: http://127.0.0.1
+                      port: 8025
+                      deleteEmailsAfterScenario: true
                 - \Helper\Acceptance
         step_decorators:
             - Codeception\Step\ConditionalAssertion

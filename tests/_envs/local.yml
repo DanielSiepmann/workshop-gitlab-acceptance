@@ -6,3 +6,6 @@ modules:
             dsn: 'mysql:host=localhost;dbname=own_workshopgitlabacceptance_testing'
             user: 'dev'
             password: 'dev'
+        MailHog:
+            url: http://127.0.0.1
+            port: 8025

@@ -24,6 +24,7 @@ test:acceptance:
     stage: test
     services:
         - mysql:5.7
+        - mailhog/mailhog:v1.0.0
         - selenium/standalone-chrome
     variables:
         MYSQL_ROOT_PASSWORD: "dev"

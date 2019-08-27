@@ -7,3 +7,6 @@ modules:
             dsn: 'mysql:host=mysql;dbname=dev'
             user: 'dev'
             password: 'dev'
+        MailHog:
+            url: http://mailhog__mailhog
+            port: 8025

@@ -12,6 +12,10 @@ if ((string) $appContext === 'Testing/Acceptance') {
             'SYS' => [
                 'trustedHostsPattern' => 'localhost:8080',
             ],
+            'MAIL' => [
+                'transport' => 'smtp',
+                'transport_smtp_server' => '127.0.0.1:1025',
+            ],
             'DB' => [
                 'Connections' => [
                     'Default' => [
@@ -28,6 +32,10 @@ if ((string) $appContext === 'Testing/Acceptance' && getenv('CI') === 'true') {
         [
             'SYS' => [
                 'trustedHostsPattern' => getenv('TESTING_DOMAIN'),
+            ],
+            'MAIL' => [
+                'transport' => 'smtp',
+                'transport_smtp_server' => 'mailhog__mailhog:1025',
             ],
             'DB' => [
                 'Connections' => [
