@@ -41,4 +41,11 @@
             }
         }
     ');
+
+    \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class)->connect(
+        \Workshop\ExampleExtension\Controller\AddressController::class,
+        'addressUpdated',
+        \Workshop\ExampleExtension\Domain\Event\Address::class,
+        'updated'
+    );
 })();

@@ -55,13 +55,11 @@ class AddressController extends ActionController
     {
         $this->addressRepository->update($address);
 
-        $this->addFlashMessage(
-            LocalizationUtility::translate('flashSuccess', 'ExampleExtension', [
-                'companyName' => $address->getCompanyName(),
-                'street' => $address->getStreet(),
-            ]),
-            'Update successfully'
-        );
+        $this->signalSlotDispatcher->dispatch(__CLASS__, 'addressUpdated', [
+            $address,
+            $this,
+        ]);
+
         $this->redirect('index');
     }
 }
