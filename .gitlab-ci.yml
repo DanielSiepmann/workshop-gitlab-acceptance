@@ -36,7 +36,7 @@ test:acceptance:
         - export LOCAL_IP=$(ip a | grep inet | sed -n 2p | xargs | cut -d" " -f2 | cut -d"/" -f1)
         - export TESTING_DOMAIN="$LOCAL_IP:8080"
         - export TYPO3_CONTEXT=Testing/Acceptance
-        - php -S "$TESTING_DOMAIN" -t web &
+        - php -S "$TESTING_DOMAIN" -t web &> php.log.txt &
     script:
         - ./vendor/bin/codecept run --env=gitlab-ci
     artifacts:
@@ -44,3 +44,4 @@ test:acceptance:
         expire_in: 10 mins
         paths:
             - tests/_output/
+            - php.log.txt
