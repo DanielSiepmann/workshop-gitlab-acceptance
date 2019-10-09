@@ -32,7 +32,6 @@
     "require-dev": {
         "typo3/cms-lowlevel": "*",
         "codeception/codeception": "^3.1.0",
-        "typo3/testing-framework": "^4.11",
         "ericmartel/codeception-email-mailhog": "^1.0"
     },
     "config": {
