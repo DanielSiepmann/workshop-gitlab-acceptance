@@ -42,8 +42,8 @@
             "authors": [
                 {
                     "name": "Matthias Sommerfeld",
-                    "role": "Developer",
-                    "email": "mso@phlylabs.de"
+                    "email": "mso@phlylabs.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A library for encoding and decoding internationalized domain names",
@@ -801,9 +801,9 @@
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "role": "Developer",
                     "email": "info@helhum.io",
-                    "homepage": "https://helhum.io"
+                    "homepage": "https://helhum.io",
+                    "role": "Developer"
                 }
             ],
             "description": "Set up required entry points for TYPO3 web directory",
@@ -886,9 +886,9 @@
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "role": "Developer",
                     "email": "info@helhum.io",
-                    "homepage": "http://helhum.io"
+                    "homepage": "http://helhum.io",
+                    "role": "Developer"
                 }
             ],
             "description": "A reliable and powerful command line interface for TYPO3 CMS",
@@ -1001,9 +1001,9 @@
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "role": "Developer",
                     "email": "info@helhum.io",
-                    "homepage": "https://helhum.io"
+                    "homepage": "https://helhum.io",
+                    "role": "Developer"
                 }
             ],
             "description": "Set up secure TYPO3 web directory containing only public assets",
@@ -2630,8 +2630,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Shows info about TYPO3, installed extensions and a separate module for available modules.",
@@ -2695,8 +2695,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Classes for the TYPO3 backend.",
@@ -2747,8 +2747,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Displays backend log, both per page and system wide. Available as the module Tools>Log (system wide overview) and Web>Info/Log (page relative overview).",
@@ -2799,8 +2799,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Backend user administration and overview. Allows you to compare the settings of users and verify their permissions and see who is online.",
@@ -2883,13 +2883,13 @@
             "authors": [
                 {
                     "name": "The TYPO3 Community",
-                    "role": "Contributor",
-                    "homepage": "https://typo3.org/community/"
+                    "homepage": "https://typo3.org/community/",
+                    "role": "Contributor"
                 },
                 {
                     "name": "TYPO3 CMS Core Team",
-                    "role": "Developer",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core"
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "TYPO3 CMS Installers",
@@ -3014,8 +3014,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "The core library of TYPO3.",
@@ -3076,8 +3076,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "A framework to build extensions for TYPO3 CMS.",
@@ -3130,8 +3130,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "TYPO3 Extension Manager",
@@ -3184,8 +3184,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Listing of files in the directory",
@@ -3245,8 +3245,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
@@ -3299,8 +3299,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "A set of common content elements based on Fluid for Frontend output.",
@@ -3356,8 +3356,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Classes for the frontend of TYPO3.",
@@ -3415,8 +3415,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Shows various infos",
@@ -3473,8 +3473,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "The Install Tool mounted as the module Tools>Install in TYPO3.",
@@ -3532,8 +3532,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "List of database-records",
@@ -3587,8 +3587,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Integration of CKEditor as Rich Text Editor.",
@@ -3636,8 +3636,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "The TYPO3 Scheduler let's you register tasks to happen at a specific time",
@@ -3688,8 +3688,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Allows users to edit a limited set of options for their user profile, eg. preferred language and their name and email address.",
@@ -3745,8 +3745,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "JavaScript-driven editor with syntax highlighting and codecompletion. Based on CodeMirror.",
@@ -3797,8 +3797,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Framework for management of TypoScript template records for the CMS frontend.",
@@ -3843,13 +3843,13 @@
             "authors": [
                 {
                     "name": "The TYPO3 Community",
-                    "role": "Contributor",
-                    "homepage": "https://typo3.org/community/"
+                    "homepage": "https://typo3.org/community/",
+                    "role": "Contributor"
                 },
                 {
                     "name": "TYPO3 CMS Core Team",
-                    "role": "Developer",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core"
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "Minimal required set of TYPO3 extensions",
@@ -3907,16 +3907,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.4",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "75a3a58c2ee1edf1c3b5c0d5bc815e9252afba80"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/75a3a58c2ee1edf1c3b5c0d5bc815e9252afba80",
-                "reference": "75a3a58c2ee1edf1c3b5c0d5bc815e9252afba80",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -3942,7 +3942,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2019-09-13T09:38:15+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "workshop/example-extension",
@@ -3950,7 +3950,7 @@
             "dist": {
                 "type": "path",
                 "url": "localPackages/example_extension",
-                "reference": "9c0990fe6a3271225e01dc16e429eaeee8cb0037"
+                "reference": "633d49d0f3b0b724a39038726e076d6504429c84"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -3971,7 +3971,10 @@
                     "email": "coding@daniel-siepmann.de"
                 }
             ],
-            "description": "Example for TYPO3 Extension Workshop."
+            "description": "Example for TYPO3 Extension Workshop.",
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "packages-dev": [
@@ -4278,12 +4281,12 @@
             "version": "1.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-webdriver.git",
+                "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/e43de70f3c7166169d0f14a374505392734160e5",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/e43de70f3c7166169d0f14a374505392734160e5",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5",
                 "shasum": ""
             },
@@ -4331,6 +4334,7 @@
                 "selenium",
                 "webdriver"
             ],
+            "abandoned": "php-webdriver/webdriver",
             "time": "2019-06-13T08:02:18+00:00"
         },
         {
@@ -4968,18 +4972,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -5015,18 +5019,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -5295,8 +5299,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -5346,8 +5350,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -5388,8 +5392,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Simple template engine.",
@@ -5437,8 +5441,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -5495,6 +5499,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -6139,8 +6144,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
@@ -6481,8 +6486,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
@@ -6537,8 +6542,8 @@
             "authors": [
                 {
                     "name": "TYPO3 Core Team",
-                    "role": "Developer",
-                    "email": "typo3cms@typo3.org"
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
@@ -6607,5 +6612,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
